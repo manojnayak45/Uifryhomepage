@@ -1,9 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- font-family: 'clash display'
+    font-family: 'Clash Display';
 }
 
 body {
@@ -12,21 +11,23 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     background-color: #ffffff;
-    
     padding: 10px;
 }
 
 .nav-content {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Adjust spacing as needed */
+    margin-right: 20px;
 }
 
 .nav-links {
@@ -49,7 +50,7 @@ body {
 }
 
 .nav-links a.active {
-    color: red; 
+    color: red;
 }
 
 .download-btn {
@@ -58,7 +59,7 @@ body {
     border-radius: 12px;
     padding: 20px 45px;
     cursor: pointer;
-    margin-left: 20px; /* Adjust spacing as needed */
+    margin-left: 20px;
 }
 
 .download-btn:hover {
@@ -68,64 +69,75 @@ body {
 .container {
     padding: 50px;
 }
-.img{
-   margin-left: 50px;
+
+.img {
+    margin-left: 50px;
 }
-.image1{
+
+.image1 {
     margin-left: 300px;
 }
-.red{
+
+.red {
     font-size: 35px;
-    font: Clash Display;
+    font-family: 'Clash Display';
     color: #ff5555;
     margin-bottom: -400px;
-    
 }
-.black{
+
+.black {
     color: #000000;
 }
-.sub{
+
+.sub {
     font-size: 25px;
 }
-.sub1{
-    color:#ff5555;
+
+.sub1 {
+    color: #ff5555;
     font-size: 20px;
     margin-top: 10px;
-    
 }
-.sub9{
-    color:#ff5555;
+
+.sub9 {
+    color: #ff5555;
     font-size: 20px;
-    margin-top: 220px;   
+    margin-top: 220px;
 }
-.sub2{
+
+.sub2 {
     font-size: 40px;
     color: #000000;
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.sub3{
+
+.sub3 {
     font-size: 35px;
     color: #ff5555;
     padding-bottom: 30px;
 }
-.app{
+
+.app {
     font-size: 30px;
     color: #000000;
-    
 }
-.text{
+
+.text {
     font-size: 25px;
     margin-right: 140px;
 }
-.total{
+
+.total {
     margin-top: 80px;
     margin-left: -40px;
 }
-.total1{
+
+.total1 {
     margin-top: 140px;
     margin-left: -60px;
 }
+
 .section {
     display: flex;
     align-items: center;
@@ -146,7 +158,8 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
-.subofsub{
+
+.subofsub {
     font-size: 49px;
     margin-top: 80px;
 }
@@ -160,36 +173,40 @@ body {
     margin-left: 30px;
     padding: 0px;
 }
-.extraimage{
+
+.extraimage {
     margin-top: -420px;
-    padding:200px;
+    padding: 200px;
 }
+
 .testimonials,
 .faqs {
     margin-top: 50px;
 }
 
-.test ,.para2{
+.test,
+.para2 {
     font-size: 16px;
     text-align: center;
-   
-
 }
-.para{
+
+.para {
     font-size: 60px;
     text-align: center;
 }
-.faq{
+
+.faq {
     font-size: 48px;
     color: #000000;
-    font-family: Clash Display;
-   
+    font-family: 'Clash Display';
 }
+
 .testimonials h2,
 .faqs h2 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 .faq {
     width: 100%;
     padding: 20px;
@@ -203,11 +220,13 @@ body {
     text-align: left;
     margin-bottom: 20px;
 }
-.faq h3{
+
+.faq h3 {
     color: #ff5555;
     font-size: 28px;
     margin-bottom: 14px;
 }
+
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -236,6 +255,7 @@ body {
     font-size: 1em;
     margin: 0;
 }
+
 .image-bottom {
     margin-top: 50px;
     text-align: center;
@@ -258,7 +278,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .footer-logo img {
@@ -277,13 +297,13 @@ body {
 }
 
 .footer-section h4 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .footer-section form {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
 }
 
 .footer-section form input,
@@ -314,6 +334,7 @@ body {
     margin: 0;
     font-size: 14px;
 }
+
 .contact-info {
     display: flex;
     margin-top: 10px;
@@ -324,3 +345,112 @@ body {
 .contact-info p {
     margin: 0;
 }
+
+@media (max-width: 1024px) {
+    .section .content {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        font-size: 30px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .download-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section .content {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .section .image img {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .extraimage {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .download-btn {
+        padding: 8px 16px;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .section .content {
+        font-size: 20px;
+    }
+
+    .faq h1 {
+        font-size: 30px;
+    }
+
+    .faq h3 {
+        font-size: 24px;
+    }
+
+    .faq-item h2 {
+        font-size: 20px;
+    }
+
+    .faq-item p {
+        font-size: 0.9em;
+    }
+}
+
+
